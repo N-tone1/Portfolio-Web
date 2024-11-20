@@ -1,15 +1,16 @@
 import { InlineCode } from "@/once-ui/components";
+import { title } from "process";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Anton',
+    lastName:  'Kolnrekaj',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Full-Stack Web Developer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Europe/Zagreb',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages:  ['English', 'Croatian', 'Albanian'] // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -24,12 +25,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/N-tone1',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/anton-k-2baa10210/',
     },
     {
         name: 'X',
@@ -39,7 +40,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'anton.toni2019@gmail.com',
     },
 ]
 
@@ -47,8 +48,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Hi, I'm Anton</>,
+    subline: <>I'm a Full Stack Web Developer passionate about learning, tackling challenges, and building innovative solutions.<br/>Let’s create something amazing together! </>
 }
 
 const about = {
@@ -69,39 +70,57 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>I'm a junior web developer focused on React, with a curiosity for solving problems and exploring new technologies. I've been interested in programming since I was young, but life took me in a different direction. I opened a bakery, built my career from the ground up, and worked hard to succeed. Along the way, I kept studying computer science because I always wanted to build applications. Now, I’m making the switch to web development and pursuing what I’ve always loved, and I'm bringing lots of energy and enthusiasm.  </>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
-                achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                "company": "Pekara Martin",
+                "timeframe": "2024 (2 months)",
+                "role": "Web Developer (Project for Bakery Website)",
+                "achievements": [
+                  <>Developed a website for Pekara Martin, including interactive features such as a product gallery, contact information, and an embedded map using Leaflet for location display.</>,
+                  <>Worked on optimizing the website for mobile devices using responsive design techniques and CSS media queries to ensure it adapts to various screen sizes.</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
-                ]
+                images: [ ]
+              },
+              
+            {
+                company: 'Martin and Sons',
+                timeframe: '2010 - 2024',
+                role: 'System Setup & Maintenance,Technology Management, IT Support & Troubleshooting, Company Director, HR, Finance, Sales, Procurement, Administrative Tasks, Managerial Roles, Production',
+                achievements: [
+                <>Responsible for setting up and configuring the cash register program to ensure smooth and efficient daily transactions.</>,
+                <>Installed and configured wireless internet to support seamless communication and connectivity throughout the bakery.</>,
+                <>Adjusted printer preferences for accurate order processing, ensuring that receipts and invoices were printed correctly for customers and suppliers.</>,
+                <>Provided on-site computer fixes, troubleshooting hardware and software issues to maintain business operations without disruptions.</>,  
+                <>Managed various aspects of bakery production, ensuring smooth operations and high-quality products.</>,
+                <>Held managerial responsibilities, overseeing daily operations, administrative tasks, and compliance with industry regulations.</>,
+                <>Managed procurement, sales, and financial processes to enhance business efficiency.</>,
+                <>Handled HR activities, including recruitment, employee management, and organizational development.</>,
+                <>Served as the company director, providing leadership in strategic planning, financial management, and overall business direction.</>
+                ],
+                images: [  {
+                    src: '/images/projects/project-01/video-02.mp4',
+                    alt: 'Once UI Project',
+                    width: 16,
+                    height: 9
+                }]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Bakery Martin',
+                timeframe: '2007 - 2010',
+                role: 'Delivery Driver, Salesperson, Dough Master',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                  <>Worked in various roles, including as a delivery driver, salesperson, and dough master.</>,
+                  <>Responsible for timely delivery of products to customers and maintaining excellent customer service standards.</>,
+                  <>Assisted in dough preparation and other key bakery processes to ensure product quality.</>
                 ],
                 images: [ ]
             }
+            
         ]
     },
     studies: {
@@ -109,13 +128,29 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'VSITE - The University of Applied Sciences for Modern Information Technologies',
+                description: (
+                    <ul>
+                      <li><strong>Studied software engineering.</strong></li>                                   
+                    </ul>
+                  ),
+                  
             },
+
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
-            }
+                name: 'Udemy Academy',
+                description:(
+                    <ul>
+                      <li><strong>50 Projects In 50 Days -HTML,CSS & JavaScript</strong></li>
+                      <li><strong>The Complete 2024 Web Development Bootcamp</strong></li>
+                      <li><strong>Currently enrolled in the course "React - The Complete Guide 2024 (incl. Next.js, Redux)."</strong></li>
+                      
+                    </ul>
+                  ),
+                  
+                
+            },
+           
         ]
     },
     technical: {
@@ -123,8 +158,16 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Frontend Development',
+                description: (
+                    <ul>
+                      <li><strong>HTML5</strong></li>
+                      <li><strong>CSS3</strong></li>
+                      <li><strong>JavaScript (ES6+)</strong></li>
+                      <li><strong>Bootstrap</strong></li>
+                      <li><strong>React.js (Basics)</strong></li>
+                    </ul>
+                  ),
                 images: [
                     {
                         src: '/images/projects/project-01/cover-02.jpg',
@@ -133,7 +176,7 @@ const about = {
                         height: 9
                     },
                     {
-                        src: '/images/projects/project-01/cover-03.jpg',
+                        src: '/images/projects/project-01/TicTacToe.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
@@ -141,17 +184,32 @@ const about = {
                 ]
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                title: 'Backend Development',
+                description: (
+                    <ul>
+                      <li><strong>Node.js and Express.js</strong></li>
+                      <li><strong>RESTful API design</strong></li>
+                      <li><strong>PostgreSQL (CRUD operations and integration with backend)</strong></li>
+                      <li><strong>Git and GitHub</strong></li>
+                      <li><strong>Debugging and troubleshooting</strong></li>
+                      <li><strong>Deployment with platforms like Heroku</strong></li>
+                    </ul>
+                  ),
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-04.jpg',
+                        src: '/images/projects/project-01/Book-collectionApp2.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/project-01/JokeGeneratorApp2.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
                     },
                 ]
-            }
+            },
         ]
     }
 }

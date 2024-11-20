@@ -315,6 +315,7 @@ export default function About(
                                             onBackground="neutral-weak">
                                             {institution.description}
                                         </Text>
+                                        
                                     </Flex>
                                 ))}
                             </Flex>

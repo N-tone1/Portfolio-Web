@@ -164,5 +164,6 @@ export default function Project({ params }: WorkParams) {
 				<CustomMDX source={post.content} />
 			</Flex>
 		</Flex>
+		
 	)
 }

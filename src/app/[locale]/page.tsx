@@ -87,8 +87,20 @@ export default function Home(
 								wrap="balance"
 								variant="display-strong-l">
 								{home.headline}
+								<img
+										src="/images/avatar.jpg" //this is avatar image after h1
+										alt="Anton"
+										style={{
+											width: '150px',
+											height: '150px',
+											borderRadius: '50%',
+											objectFit: 'cover',
+											marginTop: '2rem', // Add spacing between the heading and image
+										}}
+									/>
 							</Heading>
 						</RevealFx>
+						
 						<RevealFx
 							translateY="8" delay={0.2}>
 							<Flex fillWidth>
@@ -126,28 +138,30 @@ export default function Home(
 					</Flex>
 				
 			</Flex>
-			<RevealFx translateY="16" delay={0.6}>
-				<Projects range={[1,1]} locale={locale}/>
+			{/* This RevealFx component is responsible for creating area with work project photo and beneath short summary  */}
+			<RevealFx translateY="16" delay={0.6}> 
+				<Projects range={[1,3]} locale={locale}/>
 			</RevealFx>
 			{routes['/blog'] && (
 				<Flex
 					fillWidth gap="24"
 					mobileDirection="column">
 					<Flex flex={1} paddingLeft="l">
-						<Heading
+						
+						<Heading 						//Here is a section in home window where we can see Latest blog posts
 							as="h2"
 							variant="display-strong-xs"
 							wrap="balance">
-							Latest from the blog
+							Latest from the blog 
 						</Heading>
 					</Flex>
-					<Flex
+					<Flex //array of blog articles
 						flex={3} paddingX="20">
-						<Posts range={[1,2]} columns="2" locale={locale}/>
+						<Posts range={[1,4]} columns="2" locale={locale}/>
 					</Flex>
 				</Flex>
 			)}
-			<Projects range={[2]} locale={locale}/>
+{/* 			<Projects range={[2]} locale={locale}/> */}
 			{ newsletter.display &&
 				<Mailchimp newsletter={newsletter} />
 			}

@@ -37,6 +37,7 @@ export async function generateMetadata(
 			description,
 			images: [ogImage],
 		},
+        
 	};
 }
 
@@ -77,8 +78,11 @@ export default function Work(
                         })),
                     }),
                 }}
+                
             />
             <Projects locale={locale}/>
+            
         </Flex>
+        
     );
 }
