@@ -125,7 +125,7 @@ export default function About(
                             <Flex
                                 wrap
                                 gap="8">
-                                {person.languages.map((language, index) => (
+                                {person.languages.map((language:string, index:number) => (
                                     <Tag
                                         key={index}
                                         size="l">
