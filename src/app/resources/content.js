@@ -103,7 +103,8 @@ const about = {
                 <>Served as the company director, providing leadership in strategic planning, financial management, and overall business direction.</>
                 ],
                 images: [  {
-                    src: '/images/projects/project-01/video-02.mp4',
+                    
+                    src: '/images/projects/project-01/recepti.png',
                     alt: 'Once UI Project',
                     width: 16,
                     height: 9
