@@ -70,7 +70,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>I'm a junior web developer focused on React, with a curiosity for solving problems and exploring new technologies. I've been interested in programming since I was young, but life took me in a different direction. I opened a bakery, built my career from the ground up, and worked hard to succeed. Along the way, I kept studying computer science because I always wanted to build applications. Now, I’m making the switch to web development and pursuing what I’ve always loved, and I'm bringing lots of energy and enthusiasm.  </>
+        description: <>I'm a junior web developer passionate about everything web-related and eager to solve problems using new technologies. While my career began in the bakery business, my love for programming never faded. I’ve been studying computer science on the side, and now I’m fully diving into web development with excitement to follow my true passion.</>
     },
     work: {
         display: true, // set to false to hide this section
@@ -102,8 +102,7 @@ const about = {
                 <>Handled HR activities, including recruitment, employee management, and organizational development.</>,
                 <>Served as the company director, providing leadership in strategic planning, financial management, and overall business direction.</>
                 ],
-                images: [  {
-                    
+                images: [  {                    
                     src: '/images/projects/project-01/recepti.png',
                     alt: 'Once UI Project',
                     width: 16,
@@ -129,9 +128,11 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'VSITE - The University of Applied Sciences for Modern Information Technologies',
+                name: 'VSITE',
                 description: (
+                    
                     <ul>
+                        <>-The University of Applied Sciences for Modern Information Technologies</>
                       <li><strong>Studied software engineering.</strong></li>                                   
                     </ul>
                   ),
