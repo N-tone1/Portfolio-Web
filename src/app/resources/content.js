@@ -170,7 +170,7 @@ const about = {
                   ),
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
+                        src: '/images/projects/project-01/Martin-Bakery-home.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
