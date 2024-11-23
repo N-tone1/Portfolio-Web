@@ -40,7 +40,7 @@ export const Footer = () => {
                         item.link && (
                             <IconButton
                                 key={item.name}
-                                href={item.link}
+                                href={item.link.startsWith('mailto:') || item.link.startsWith('http') ? item.link : `mailto:${item.link}`}
                                 icon={item.icon}
                                 tooltip={item.name}
                                 size="s"

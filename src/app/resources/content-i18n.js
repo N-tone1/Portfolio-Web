@@ -32,15 +32,11 @@ const createI18nContent = (t) => {
             icon: 'linkedin',
             link: 'www.linkedin.com/in/anton-k-2baa10210',
         },
-        {
-            name: 'X',
-            icon: 'x',
-            link: '',
-        },
+      
         {
             name: 'Email',
             icon: 'email',
-            link: 'anton.toni2019@gmail.com',
+            link: 'mailto:anton.toni2019@gmail.com',
         },
     ]
 

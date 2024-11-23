@@ -190,7 +190,7 @@ export default function About(
                                     item.link && (
                                         <Button
                                             key={item.name}
-                                            href={item.link}
+                                            href={item.link.startsWith('mailto:') || item.link.startsWith('http') ? item.link : `mailto:${item.link}`}
                                             prefixIcon={item.icon}
                                             label={item.name}
                                             size="s"

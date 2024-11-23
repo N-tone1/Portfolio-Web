@@ -87,7 +87,7 @@ export default function Home(
 								wrap="balance"
 								variant="display-strong-l">
 								{home.headline}
-								<img
+								{/* <><img
 										src="/images/avatar.jpg" //this is avatar image after h1
 										alt="Anton"
 										style={{
@@ -97,7 +97,7 @@ export default function Home(
 											objectFit: 'cover',
 											marginTop: '2rem', // Add spacing between the heading and image
 										}}
-									/>
+									/></> */}
 							</Heading>
 						</RevealFx>
 						
