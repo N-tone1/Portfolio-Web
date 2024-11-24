@@ -81,13 +81,13 @@ export default function Home(
 					<Flex
 						direction="column"
 						fillWidth maxWidth="s" gap="m">
-						<RevealFx
+						 <RevealFx
 							translateY="4">
 							<Heading
 								wrap="balance"
 								variant="display-strong-l">
 								{home.headline}
-								{/* <><img
+								{/*  <><img
 										src="/images/avatar.jpg" //this is avatar image after h1
 										alt="Anton"
 										style={{
@@ -97,10 +97,10 @@ export default function Home(
 											objectFit: 'cover',
 											marginTop: '2rem', // Add spacing between the heading and image
 										}}
-									/></> */}
+									/></>  */}
 							</Heading>
 						</RevealFx>
-						
+						 
 						<RevealFx
 							translateY="8" delay={0.2}>
 							<Flex fillWidth>
