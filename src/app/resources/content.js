@@ -70,7 +70,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>I'm a junior web developer passionate about everything web-related and eager to solve problems using new technologies. While my career began in the bakery business, my love for programming never faded. I’ve been studying computer science on the side, and now I’m fully diving into web development with excitement to follow my true passion.</>
+        description: <>I'm a junior web developer passionate about everything web-related and eager to solve problems using new technologies. While my career began in my familiy's business, my passion for programming never faded. I’ve been studying computer science on the side, and now I’m fully diving into web development with excitement to follow my true passion.</>
     },
     work: {
         display: true, // set to false to hide this section
@@ -162,12 +162,13 @@ const about = {
             {
                 title: 'Frontend Development',
                 description: (
-                    <ul>
-                      <li><strong>HTML5</strong></li>
-                      <li><strong>CSS3</strong></li>
+                    <ul>                      
+                      <li><strong>React.js </strong></li>
                       <li><strong>JavaScript (ES6+)</strong></li>
                       <li><strong>Bootstrap</strong></li>
-                      <li><strong>React.js (Basics)</strong></li>
+                      <li><strong>HTML5</strong></li>
+                      <li><strong>CSS3</strong></li>
+                   
                     </ul>
                   ),
                 images: [
@@ -189,12 +190,12 @@ const about = {
                 title: 'Backend Development',
                 description: (
                     <ul>
-                      <li><strong>Node.js and Express.js</strong></li>
-                      <li><strong>RESTful API design</strong></li>
+                      <li><strong>Node.js and Express.js</strong></li>                     
                       <li><strong>PostgreSQL (CRUD operations and integration with backend)</strong></li>
                       <li><strong>Git and GitHub</strong></li>
                       <li><strong>Debugging and troubleshooting</strong></li>
-                      <li><strong>Deployment with platforms like Heroku</strong></li>
+                      <li><strong>RESTful API design</strong></li>
+                      <li><strong>Deployment with platforms like Vercel</strong></li>
                     </ul>
                   ),
                 images: [
